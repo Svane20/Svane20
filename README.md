@@ -2,6 +2,6 @@
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=Svane20&show_icons=true&theme=synthwave&count_private=true&include_all_commits" />
 </a>
 <a href="https://github.com/anuraghazra/convoychat">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact&theme=synthwave&card_width=270" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact&theme=synthwave&card_width=280" />
 </a>
 
