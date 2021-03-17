@@ -1,65 +1,11 @@
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Svane20&show_icons=true&theme=synthwave&count_private=true)
 
-name: "🈷️ Most used languages"
-cost: 0 API request
-categorie: github
-index: 1
-supports:
-  - user
-  - organization
-  - repository
-inputs:
-
-  # Enable or disable plugin
-  plugin_languages:
-    description: Display most used languages metrics
-    type: boolean
-    default: no
-
-  # List of languages that will be ignored
-  plugin_languages_ignored:
-    description: Languages to ignore
-    type: array
-    format: comma-separated
-    default: ""
-    example: html, css, ...
-
-  # List of repositories that will be skipped
-  plugin_languages_skipped:
-    description: Repositories to skip
-    type: array
-    format: comma-separated
-    default: ""
-    example: my-repo-1, my-repo-2, owner/repo-3 ...
-
-  # Overrides default languages colors
-  # Use `${n}:${color}` to change the color of the n-th most used language (e.g. "0:red" to make your most used language red)
-  # Use `${language}:${color}` to change the color of named language (e.g. "javascript:red" to make JavaScript language red, language case is ignored)
-  # Use a value from `colorsets.json` to use a predefined set of colors
-  # Both hexadecimal and named colors are supported
-  plugin_languages_colors:
-    description: Custom languages colors
-    type: array
-    format:
-      - comma-separated
-      - /((?<index>[0-9])|(?<language>[-+a-z0-9#])):(?<color>#?[-a-z0-9]+)/
-    default: github
-    example: javascript:red, 0:blue, 1:#ff00aa
-
-  # Languages additional details
-  plugin_languages_details:
-    description: Additional details
-    type: array
-    format: comma-separated
-    values:
-      - bytes-size # Languages total size written in bytes
-      - percentage # Languages proportions in %
-    default: ""
-    example: bytes-size, percentage
-
-  # Minimum threshold (in percentage) to reach for languages to be displayed
-  plugin_languages_threshold:
-    description: Minimum threshold
-    type: string
-    default: 0%
+- uses: lowlighter/metrics@latest
+  with:
+    # ... other options
+    plugin_wakatime: yes
+    plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}      # Required
+    plugin_wakatime_days: 7                                   # Display last week stats
+    plugin_wakatime_sections: time, projects, projects-graphs # Display time and projects sections, along with projects graphs
+    plugin_wakatime_limit: 4                                  # Show 4 entries per graph
