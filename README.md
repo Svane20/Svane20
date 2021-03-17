@@ -1,4 +1,4 @@
-<a href="https://github.com/anuraghazra/github-readme-stats">
+<a href="https://github.com/Svane20/Svane20">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=Svane20&show_icons=true&theme=synthwave&count_private=true&include_all_commits&hide=prs,contributed to,&disable_animations=true" />
 </a>
 <a href="https://github.com/anuraghazra/convoychat">
